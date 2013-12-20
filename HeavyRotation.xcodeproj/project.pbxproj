@@ -19,6 +19,9 @@
 		D8E248AA1864D9870083C0FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E248921864D9870083C0FD /* UIKit.framework */; };
 		D8E248B21864D9870083C0FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E248B01864D9870083C0FD /* InfoPlist.strings */; };
 		D8E248B41864D9870083C0FD /* HeavyRotationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E248B31864D9870083C0FD /* HeavyRotationTests.m */; };
+		D8E248C01864DDFC0083C0FD /* HeavyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E248BE1864DDFC0083C0FD /* HeavyViewController.m */; };
+		D8E248C11864DDFC0083C0FD /* HeavyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E248BF1864DDFC0083C0FD /* HeavyViewController.xib */; };
+		D8E248C31864E0C40083C0FD /* wallpapers-green-nature-field-fields-grass-lovely-free-hd-800x600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8E248C21864E0C40083C0FD /* wallpapers-green-nature-field-fields-grass-lovely-free-hd-800x600.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		D8E248AF1864D9870083C0FD /* HeavyRotationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeavyRotationTests-Info.plist"; sourceTree = "<group>"; };
 		D8E248B11864D9870083C0FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E248B31864D9870083C0FD /* HeavyRotationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeavyRotationTests.m; sourceTree = "<group>"; };
+		D8E248BD1864DDFC0083C0FD /* HeavyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeavyViewController.h; sourceTree = "<group>"; };
+		D8E248BE1864DDFC0083C0FD /* HeavyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeavyViewController.m; sourceTree = "<group>"; };
+		D8E248BF1864DDFC0083C0FD /* HeavyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeavyViewController.xib; sourceTree = "<group>"; };
+		D8E248C21864E0C40083C0FD /* wallpapers-green-nature-field-fields-grass-lovely-free-hd-800x600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wallpapers-green-nature-field-fields-grass-lovely-free-hd-800x600.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +116,10 @@
 			children = (
 				D8E2489D1864D9870083C0FD /* RotationAppDelegate.h */,
 				D8E2489E1864D9870083C0FD /* RotationAppDelegate.m */,
+				D8E248BD1864DDFC0083C0FD /* HeavyViewController.h */,
+				D8E248BE1864DDFC0083C0FD /* HeavyViewController.m */,
+				D8E248BF1864DDFC0083C0FD /* HeavyViewController.xib */,
+				D8E248C21864E0C40083C0FD /* wallpapers-green-nature-field-fields-grass-lovely-free-hd-800x600.jpg */,
 				D8E248A01864D9870083C0FD /* Images.xcassets */,
 				D8E248951864D9870083C0FD /* Supporting Files */,
 			);
@@ -221,6 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E248991864D9870083C0FD /* InfoPlist.strings in Resources */,
+				D8E248C11864DDFC0083C0FD /* HeavyViewController.xib in Resources */,
+				D8E248C31864E0C40083C0FD /* wallpapers-green-nature-field-fields-grass-lovely-free-hd-800x600.jpg in Resources */,
 				D8E248A11864D9870083C0FD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E248C01864DDFC0083C0FD /* HeavyViewController.m in Sources */,
 				D8E2489F1864D9870083C0FD /* RotationAppDelegate.m in Sources */,
 				D8E2489B1864D9870083C0FD /* main.m in Sources */,
 			);
@@ -363,7 +377,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeavyRotation/HeavyRotation-Prefix.pch";
 				INFOPLIST_FILE = "HeavyRotation/HeavyRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,7 +392,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeavyRotation/HeavyRotation-Prefix.pch";
 				INFOPLIST_FILE = "HeavyRotation/HeavyRotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
