@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface HeavyViewController : UIViewController
+{
+    IBOutlet UIImageView *imgView;
+    IBOutlet UISlider *sld;
+    IBOutlet UIButton *lBtn;
+    IBOutlet UIButton *rBtn;
+    IBOutlet UIButton *spcBtn;
+}
+
+- (void)setAutoresizingMask;
 
 @end

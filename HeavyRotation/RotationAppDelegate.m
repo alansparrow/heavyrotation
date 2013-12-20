@@ -43,6 +43,9 @@
              object:device];
     
     hvc = [[HeavyViewController alloc] init];
+    
+    // Silver Challenge: Programmatically Setting Autoresizing Masks
+        
     [[self window] setRootViewController:hvc];
     
     self.window.backgroundColor = [UIColor whiteColor];

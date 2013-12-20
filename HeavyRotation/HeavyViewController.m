@@ -25,4 +25,37 @@
     
 }
 
+- (void)viewDidLoad
+{
+    [self setAutoresizingMask];
+}
+
+- (void)setAutoresizingMask
+{
+    
+    [imgView setAutoresizingMask:UIViewAutoresizingFlexibleHeight |
+     UIViewAutoresizingFlexibleWidth];
+    
+    [sld setAutoresizingMask:UIViewAutoresizingFlexibleWidth |
+     UIViewAutoresizingFlexibleBottomMargin];
+    
+    [lBtn setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin |
+     UIViewAutoresizingFlexibleRightMargin];
+    
+    [rBtn setAutoresizingMask:UIViewAutoresizingFlexibleTopMargin |
+     UIViewAutoresizingFlexibleLeftMargin];
+    
+}
+
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)x duration:(NSTimeInterval)duration
+{
+    UIColor *color = nil;
+    CGRect bounds = [[self view] bounds];
+    // If the orientation is rotating to Portrait mode...
+    if (UIInterfaceOrientationIsPortrait(x)) {
+        // Put the button on the lefthand side of the HeavyViewController
+    }
+}
+
+
 @end
