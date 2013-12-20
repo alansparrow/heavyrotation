@@ -22,6 +22,7 @@
     //return TRUE;
     
     return UIInterfaceOrientationIsLandscape(x);
+    
 }
 
 @end
